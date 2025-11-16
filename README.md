@@ -1,4 +1,4 @@
-# 🚀 Análise e Automação de Bônus por Vendas (`AnáliseBonusViagem`)
+# 📊 Análise e Automação de Bônus por Vendas 
 
 ## 💡 Descrição do Projeto
 
@@ -22,15 +22,46 @@ O script (`main.py`) utiliza a biblioteca **Pandas** para ler os 6 arquivos `.xl
 
 ### Pré-requisitos
 1.  **Python 3** instalado.
-2.  Credenciais e um número de telefone da conta **Twilio**.
+2.  Ter uma conta **Twilio** ativa.
+3.  Instalar as dependências listadas no `requirements.txt`.
 
 ### 1. Estrutura de Arquivos
 
-Certifique-se de que todos os arquivos Excel (`janeiro.xlsx`, `fevereiro.xlsx`, etc.) estejam na mesma pasta que o arquivo **`main.py`**.
+Certifique-se de que todos os arquivos Excel (`janeiro.xlsx`, `fevereiro.xlsx`, etc.) estejam na mesma pasta que o seu arquivo Python (ex: `main.py` ou `vendas_automatica.py`).
 
 ### 2. Instalação de Dependências
 
-Abra o terminal na pasta raiz do projeto (`AnáliseBonusViagem`) e instale as bibliotecas listadas no `requirements.txt`:
+Abra o terminal na pasta raiz do projeto e instale as bibliotecas necessárias:
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 3. Configuração de Credenciais 🔑
+
+⚠️ ATENÇÃO: O código contém placeholders (valores genéricos) nas credenciais e números de telefone por segurança.
+
+I. Para rodar o projeto, você DEVE editar o arquivo Python e substituir os placeholders (ex: ACxxxxxxxx...) pelas suas credenciais e números de telefone válidos da Twilio:
+
+* account_sid e auth_token: Seus tokens Twilio.
+
+* to: Número de telefone do destinatário.
+
+* from_: Seu número de telefone Twilio.
+
+II. Após configurar as credenciais, execute o programa a partir do terminal:
+
+```bash
+python main.py 
+# ou python vendas_automatica.py, dependendo do nome do seu arquivo.
+```
+O programa irá parar a execução assim que o primeiro vendedor for encontrado, respeitando a regra do bônus.
+
+## 🤝 Contato
+
+Desenvolvido por: **Wesley Santos**
+
+| Plataforma | Link |
+| :--- | :--- |
+| **LinkedIn** | https://www.linkedin.com/in/itwesleysantos/ |
+| **GitHub** | https://github.com/itwesleysantos |
