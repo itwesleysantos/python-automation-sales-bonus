@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ⚠️ ATENÇÃO: O código contém placeholders (valores genéricos) nas credenciais e números de telefone por segurança.
 
-I. Para rodar o projeto, você DEVE editar o arquivo Python e substituir os placeholders (ex: ACxxxxxxxx...) pelas suas credenciais e números de telefone válidos da Twilio:
+I. Para rodar o projeto, você DEVE editar o arquivo Python e substituir os placeholders (ex: XXXXXXXXX...) pelas suas credenciais e números de telefone válidos da Twilio:
 
 * account_sid e auth_token: Seus tokens Twilio.
 
@@ -52,8 +52,7 @@ I. Para rodar o projeto, você DEVE editar o arquivo Python e substituir os plac
 II. Após configurar as credenciais, execute o programa a partir do terminal:
 
 ```bash
-python main.py 
-# ou python vendas_automatica.py, dependendo do nome do seu arquivo.
+python main.py ou python outronome.py, dependendo de qual tenha sido o nome dada ao seu arquivo.
 ```
 O programa irá parar a execução assim que o primeiro vendedor for encontrado, respeitando a regra do bônus.
 
