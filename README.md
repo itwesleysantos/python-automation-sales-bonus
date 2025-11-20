@@ -1,4 +1,4 @@
-# 📊 Análise e Automação de Bônus por Vendas 
+# 🐍 Python: Automação de Análise de Vendas e Notificação de Bônus por SMS
 
 ## 💡 Descrição do Projeto
 
